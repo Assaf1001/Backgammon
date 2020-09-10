@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Backgammon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+        <div class="pieces-out pieces-out-right">
+            <div class="pieces-out-inner inner-up">
+                <div>
+                    <h1>BLACK PLAYER</h1>
+                    <div class="turn-dice none"></div>
+                </div>
+            </div>
+            <div class="pieces-out-inner">
+                <div>
+                    <h1 class="h1-white">WHITE PLAYER</h1>
+                    <div class="turn-dice none"></div>
+                </div>
+            </div>
+        </div>
+        <div id="board">
+            <div class="board-inner"></div>
+            <div class="middle">
+                <div id="0" class="piece-container up captured-pieces-container"></div>
+                <div id="25" class="piece-container down captured-pieces-container _black">
+                    <!-- <div class="piece black"></div>
+                    <div class="piece black"></div>
+                    <div class="piece black"></div> -->
+                </div>
+                <div id="dice-container">
+                    <div id="dice"></div><div id="dice"></div>
+                </div>
+                <button id="roll-dice">Roll<br>Dise</button>
+            </div>
+            <div class="board-inner right"></div>
+        </div>
+        <div class="pieces-out">
+            <div class="pieces-out-inner inner-up">
+                <h1>Black Player</h1>
+                <div id="26" class="piece-container up pieces-out-container out-up"></div>
+            </div>
+            <div class="pieces-out-inner">
+                <div id="27" class="piece-container down pieces-out-container"></div>
+                <h1 class="h1-white">White Player</h1>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal__box" id="modal-box">
+        <h1 id="start-message">White Player Roll a Dice</h1>
+        <div id="dice-start1" class="dice-start"></div><div id="dice-start2" class="dice-start __2 "></div>
+        <button id="roll-start-dice">Roll<br>Dise</button>
+    </div>
+    
+    
+    
+    
+
+    <script src="./Backgammon.js"></script>
+</body>
+</html>

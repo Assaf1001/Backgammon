@@ -1,0 +1,307 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-image: url(./Images/Background.jpg);
+}
+
+#all {
+    width: 1502px;
+    height: 725px;
+}
+
+#board{
+    display: block;
+    margin: 2rem auto;
+    width: 1000px;
+    height: 640px;
+    border: 30px outset #121b1f;
+}
+
+.board-inner{
+    display: inline-block;
+    margin: 0;
+    padding-left: 4px;
+    width: 455px;
+    height: 100%;
+    background: #557484;
+}
+
+.right{
+    float: right;
+}
+
+.triangle{
+    display: inline-block;
+    margin-left: 1.4px;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    z-index: 1;
+}
+
+.triangle-down-dark{
+    border-bottom: 265px solid #152f3b;
+    margin-top: 23.35%;
+}
+
+.triangle-up-dark{
+    border-top: 265px solid #152f3b;
+}
+
+.triangle-down-light{
+    border-bottom: 265px solid #a3cee4;
+}
+
+.triangle-up-light{
+    border-top: 265px solid #a3cee4;
+}
+
+.piece-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    width: 73px;
+    height: 300px;
+    margin-left: -38px;
+}
+
+.up{
+    top: 60px;
+}
+
+.down{
+    flex-direction: column-reverse;
+    top: 396px;
+}
+
+.piece{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 7px;
+    top: 20px;
+    z-index: 1;
+}
+
+.white{
+    background-image: url(./Images/whitePlayer.png);
+    background-position: -7px -6px;
+    background-size: 75px;
+}
+
+.black{
+    background-image: url(./Images/blackPlayer.png);
+    background-position: -7px -6px;
+    background-size: 75px;
+}   
+
+.select-ring{
+    width: 58px;
+    height: 57px;
+    border: 5px solid blue;
+    margin-left: 3px; 
+    background-position: -8px -8px;
+}
+
+.middle{
+    display: inline-block;
+    position: absolute;
+    left: 718px;
+    width: 82px;
+    height: 640px;
+    background: #121b1f;
+}
+
+.captured-pieces-container{
+    position: absolute;
+    margin-left: 0;
+    width: 80px;
+    height: 160px;
+    top: 286px;
+}
+
+._black{
+    top: 100px;
+}
+
+.pieces-out{
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: 1300px;
+    width: 130px;
+    height: 640px;
+    border: 30px inset #121b1f;
+    background: #557484;
+
+}
+
+.pieces-out-right{
+    left: 30px;
+}
+
+h1{
+    margin-top: -2px;
+    margin-bottom: -15px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.h1-white{
+    margin-top: 6px;
+    color: white;
+}
+
+.pieces-out-container{
+    position: relative;
+    top: 9px;
+    margin: 0 auto;
+    width: 80px;
+    height: 230px;
+    border: 5px solid #121b1f;
+    background: #152f3b;
+}
+
+.out-up{
+    top: 16px;
+}
+
+.pieces-out-inner{
+    position: absolute;
+    width: 82%;
+    height: 300px;
+    top: 317px;
+    border: 12px outset #152f3b;
+}
+
+.inner-up{
+    top: 0px;
+}
+
+.turn-dice{
+    margin-top: 40px;
+    margin-left: 3px;
+    width: 100px;
+    height: 100px;
+    background-size: 100px ;
+    background-repeat: no-repeat;
+    background-image: url(./Images/TurnDice.png);
+}
+
+#dice-container{
+    position: absolute;
+    margin-left: 0;
+    width: 80px;
+    height: 120px;
+    top: 420px;
+}
+
+#roll-dice{
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 560px;
+    left: 1px;
+    width: 80px;
+    height: 60px;
+    border: 2px solid black;
+    color: #121b1f;
+    background:#557484;
+    font-size: 1.2rem;
+}
+
+#dice{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    margin: 0 auto; 
+}
+
+.dice-transperent{
+    opacity: 0.5;
+}
+
+._1{
+    background-image: url(./Images/Dice-1.png);
+}
+
+._2{
+    background-image: url(./Images/Dice-2.png);
+}
+
+._3{
+    background-image: url(./Images/Dice-3.png);
+}
+
+._4{
+    background-image: url(./Images/Dice-4.png);
+}
+
+._5{
+    background-image: url(./Images/Dice-5.png);
+}
+
+._6{
+    background-image: url(./Images/Dice-6.png);
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    width: 346px;
+    height: 300px;
+    top: 100px ;
+    left: 590px;
+    z-index: 1;
+}
+
+.modal__box {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #121b1fe0;
+}
+
+.modal__box h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.none {
+    display: none;
+}
+
+.dice-start{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 90px;
+    left: 64px;
+    background-size: 100px;
+}
+
+.__2{
+    margin-left: 120px;
+}
+
+#roll-start-dice{
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 220px;
+    left: 135px;
+    width: 80px;
+    height: 60px;
+    border: 2px solid black;
+    color: #121b1f;
+    background:#557484;
+    font-size: 1.2rem;
+}
+
+
+
